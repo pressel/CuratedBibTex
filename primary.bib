@@ -1,12 +1,71 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for Pressel  Kyle at 2015-10-14 13:27:44 +0200 
+%% Created for Pressel  Kyle at 2015-10-14 15:23:54 +0200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Tripoli1981,
+	Abstract = {Previous studies have shown liquid water potential temperature to be an inappropriate choice for a thermodynamic variable in a deep cumulus convection model. In this study, an alternate form of this variable called ice-liquid water potential temperature (?u) is derived. Errors resulting from approximations made are discussed, and an empirical form of the ?u equation is introduced which eliminates much of this error. Potential temperature lapse rates determined in saturated updrafts and unsaturated downdrafts by various ?u approximations, an equivalent potential temperature approximation and a conventional irreversible moist thermodynamic approximation are then compared to the potential temperature lapse rate determined from a rigorously derived reversible thermodynamic energy equation. These approximations are then extended to a precipitating system where comparisons are again made. It is found that the errors using the empirical form of the ?u equation are comparable to those made using conventional irreversible moist thermodynamic approximations. The advantages of using ?u as an alternative to ? in deep convection and second-order closure models also are discussed.},
+	Author = {Tripoli, Gregory J. and Cotton, William R.},
+	Booktitle = {Monthly Weather Review},
+	Date-Added = {2015-10-14 13:23:13 +0000},
+	Date-Modified = {2015-10-14 13:23:52 +0000},
+	Doi = {10.1175/1520-0493(1981)109<1094:TUOLLW>2.0.CO;2},
+	Journal = {Monthly Weather Review},
+	Number = {5},
+	Pages = {1094--1102},
+	Title = {The Use of lce-Liquid Water Potential Temperature as a Thermodynamic Variable In Deep Atmospheric Models},
+	Volume = {109},
+	Year = {1981},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1175/1520-0493(1981)109%3C1094:TUOLLW%3E2.0.CO;2}}
+
+@article{Pauluis2008,
+	Abstract = {The primary goal of this paper is to validate the use of the anelastic approximation for fluids with a complex equation of state such as moist air or seawater. The anelastic approximation is based on a leading-order expansion of the equations of motion for a compressible fluid in terms of density. Its application to atmospheric flows has been based on a dry framework that treats phase transitions as an external energy source. However, cloudy air is more accurately described as a two-phase fluid in which condensed water and water vapor are in thermodynamic equilibrium. Thermodynamic equilibrium reduces to three the number of state variables necessary to describe the thermodynamic state of moist air, and leads to a discontinuity in the partial derivatives of the equation of state at the saturation point. A version of the anelastic approximation for a moist atmosphere is derived here by considering the atmospheric density as a small perturbation from a moist-adiabatic reference profile, and using moist entropy and total water content as prognostic variables, with buoyancy determined from the complete nonlinear equation of state. The key finding of this paper is that this implementation of the anelastic approximation conserves energy. The total energy is equal to the sum of the kinetic energy and the thermodynamic energy. The latter is found to be equal to the sum of the enthalpy and geopotential energy of the parcel. Furthermore, the state relationships between this thermodynamic energy, entropy, and other state variables are the same as those for moist air after replacing the total pressure with the reference state pressure. This guarantees that, as long as the pressure perturbation remains small, the thermodynamic behavior of a fluid under the anelastic approximation is fully consistent with both the first and second laws of thermodynamics. Two implications of this finding are also discussed. First, it is shown that the first and second laws of thermodynamics constrain the vertically integrated buoyancy flux. This is equivalent to deriving the total work performed in a compressible atmosphere from its entropy and energy budgets. Second, it is argued that an anelastic model can be built with temperature or enthalpy as a prognostic variable instead of entropy. The rate of change for this new state variable can be obtained from energy conservation, so that such a model explicitly obeys the first law of thermodynamics. The entropy in this model is equal to the entropy of the parcel evaluated at the reference pressure, and its evolution obeys the second law of thermodynamics.},
+	Author = {Pauluis, Olivier},
+	Booktitle = {Journal of the Atmospheric Sciences},
+	Date-Added = {2015-10-14 13:18:47 +0000},
+	Date-Modified = {2015-10-14 13:19:28 +0000},
+	Doi = {10.1175/2007JAS2475.1},
+	Journal = {Journal of the Atmospheric Sciences},
+	Number = {8},
+	Pages = {2719--2729},
+	Title = {Thermodynamic Consistency of the Anelastic Approximation for a Moist Atmosphere},
+	Volume = {65},
+	Year = {2008},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1175/2007JAS2475.1}}
+
+@article{Pressel2015,
+	Abstract = {A large-eddy simulation (LES) framework is developed for simulating the dynamics of clouds and boundary layers with closed water and entropy balances. The framework is based on the anelastic equations in a formulation that remains accurate for deep convection. As prognostic variables, it uses total water and entropy, which are conserved in adiabatic and reversible processes, including reversible phase changes of water. This has numerical advantages for modeling clouds, in which reversible phase changes of water occur frequently. The equations of motion are discretized using higher-order weighted essentially nonoscillatory (WENO) discretization schemes with strong stability preserving time stepping. Numerical tests demonstrate that the WENO schemes yield simulations superior to centered schemes, even when the WENO schemes are used at coarser resolution. The framework is implemented in a new LES code written in Python and Cython, which makes the code transparent and easy to use for a wide user group.},
+	Author = {Pressel, Kyle G. and Kaul, Colleen M. and Schneider, Tapio and Tan, Zhihong and Mishra, Siddhartha},
+	Date-Added = {2015-10-14 11:56:12 +0000},
+	Date-Modified = {2015-10-14 11:56:29 +0000},
+	Doi = {10.1002/2015MS000496},
+	Journal = {Journal of Advances in Modeling Earth Systems},
+	Keywords = {Large eddy simulation, Clouds and cloud feedbacks, Boundary layer processes, Numerical approximations and analysis, Modeling, large-eddy simulation, clouds, entropy, moist thermodynamics, numerical methods},
+	Title = {Large-eddy simulation in an anelastic framework with closed water and entropy balances},
+	Url = {http://dx.doi.org/10.1002/2015MS000496},
+	Year = {2015},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1002/2015MS000496}}
+
+@article{Sarve2014,
+	Abstract = {In large-eddy simulation (LES), large-scale turbulent structures are explicitly resolved on the numerical grid while the dissipative turbulent eddies, typically smaller than the grid size, must be modeled. Because in the atmospheric boundary layer a large disparity of turbulent scales exists (about 9 orders of magnitude separate the largest and smallest scales), LES is considered as an essential modeling approach to capture the physics and dynamics of boundary layer clouds. A new LES solver developed at Stockholm University is presented here for the first time. The model solves for nonhydrostatic anelastic equations using high-order low-dissipative numerical schemes for the advection of scalars and momentum. A two-moment bulk microphysics scheme is implemented representing five types of hydrometeors including ice crystals and snow. The LES is evaluated based on simulations of two well-documented stratiform cloud events that were previously used for LES intercomparisons. In the first one, a marine drizzling stratocumulus observed during DYCOMS-II, the model is shown to predict bulk cloud microphysical and dynamical properties within the range of the intercomparison model results. In the second case, based on a monolayer Arctic mixed-phase cloud observed during ISDAC, we found that when using fast-falling crystals, ice quickly precipitates out of the cloud without significant growth, resulting in very low ice water paths. The simulated clouds are also found to be very sensitive to the prescribed ice crystal number concentration: multiplying the ice concentration by a factor 2.5 results in rapid cloud dissipation in the most extreme case. Overall, these results are found to be consistent with former studies of Arctic mixed-phase clouds as well as in situ measurements. More specifically, when the ice number concentration and parameterized ice habit are constrained by measurements, simulated microphysical properties such as the ice water path and ice crystal size distribution are found to agree well with observations.},
+	Author = {Savre, J. and Ekman, A. M. L. and Svensson, G.},
+	Date-Added = {2015-10-14 11:32:09 +0000},
+	Date-Modified = {2015-10-14 11:32:21 +0000},
+	Doi = {10.1002/2013MS000292},
+	Issn = {1942-2466},
+	Journal = {Journal of Advances in Modeling Earth Systems},
+	Keywords = {Large eddy simulation, Boundary layer processes, Clouds and cloud feedbacks, Model calibration, large-eddy simulation, boundary layer dynamics, stratiform clouds, model development},
+	Number = {3},
+	Pages = {630--649},
+	Title = {Technical note: Introduction to MIMICA, a large-eddy simulation solver for cloudy planetary boundary layers},
+	Volume = {6},
+	Year = {2014},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1002/2013MS000292}}
 
 @article{Xiao2015,
 	Abstract = {Yamaguchi and Feingold (2012) note that the cloud fields in their large-eddy simulations (LESs) of marine stratocumulus using the Weather Research and Forecasting (WRF) model exhibit a strong sensitivity to time stepping choices. In this study, we reproduce and analyze this sensitivity issue using two stratocumulus cases, one marine and one continental. Results show that (1) the sensitivity is associated with spurious motions near the moisture jump between the boundary layer and the free atmosphere, and (2) these spurious motions appear to arise from neglecting small variations in water vapor mixing ratio (qv) in the pressure gradient calculation in the acoustic sub-stepping portion of the integration procedure. We show that this issue is remedied in the WRF dynamical core by replacing the prognostic equation for the potential temperature θ with one for the moist potential temperature θm=θ(1 + 1.61qv), which allows consistent treatment of moisture in the calculation of pressure during the acoustic sub-steps. With this modification, the spurious motions and the sensitivity to the time stepping settings (i.e., the dynamic time step length and number of acoustic sub-steps) are eliminated in both of the example stratocumulus cases. This modification improves the applicability of WRF for LES applications, and possibly other models using similar dynamical core formulations, and also permits the use of longer time steps than in the original code. This article is protected by copyright. All rights reserved.},
